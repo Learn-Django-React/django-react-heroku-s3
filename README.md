@@ -4,6 +4,16 @@ Boilerplate Django server and React web app configured for Heroku and S3.
 
 # Installation
 
+Install requirements:
+
+```
+source env bin/activate
+```
+
+```
+pip install -r requirements.txt
+```
+
 Create a .env file:
 
 ```
@@ -14,15 +24,7 @@ REDIS_URL = 'redis://localhost:6379'
 SENDGRID_API_KEY = '<sendgrid_api_key>'
 ```
 
-Install requirements and run Django server locally:
-
-```
-source env bin/activate
-```
-
-```
-pip install -r requirements.txt
-```
+Run Django server locally:
 
 ```
 cd parakeet && python manage.py runserver 0.0.0.0:8000
