@@ -50,3 +50,11 @@ Deploy to Heroku:
 ```
 git push heroku main
 ```
+
+Set Heroku environment variables:
+```
+heroku config:set SECRET_KEY='<django_secret_key>'
+heroku config:set IS_PRODUCTION='True'
+heroku config:set AWS_ACCESS_KEY_ID='<aws_access_key_id>'
+heroku config:set AWS_SECRET_ACCESS_KEY='<aws_secret_access_key>'
+```
