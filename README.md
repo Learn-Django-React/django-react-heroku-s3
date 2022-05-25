@@ -1,2 +1,27 @@
 # django-react-heroku-s3
 Django server and React web app hosted on Heroku and s3
+
+
+Run Django server:
+
+```
+source env bin/activate
+```
+
+```
+pip install -r requirements.txt
+```
+
+```
+python parakeet/manage.py runserver 0.0.0.0:8000
+```
+
+Run React app:
+
+```
+npm install
+```
+
+```
+npm run watch
+```
