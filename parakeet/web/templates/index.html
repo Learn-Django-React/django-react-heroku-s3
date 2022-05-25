@@ -1,0 +1,69 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#FFFFFF"/>
+    <link rel="apple-touch-icon" href="{% static 'img/touch-icon-iphone.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/touch-icon-ipad.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/touch-icon-iphone-retina.png' %}">
+    <link rel="apple-touch-icon" sizes="167x167" href="{% static 'img/touch-icon-ipad-retina.png' %}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="date=no">
+    <meta property="og:type" content="website">
+    {% if not page_title %}
+      <title></title>
+    {% endif %}
+    {% if page_title %}
+      <title>{{ page_title }}</title>
+      <meta property="og:title" content="{{ page_title }}">
+      <meta name="twitter:title" content="{{ page_title }}">
+    {% endif %}
+    {% if page_description %}
+      <meta name="description" content="{{ page_description }}">
+      <meta property="og:description" content="{{ page_description }}">
+      <meta name="twitter:description" content="{{ page_description }}">
+    {% endif %}
+    {% if not page_description %}
+      <meta name="description" content="">
+      <meta property="og:description" content="">
+      <meta name="twitter:description" content="">
+    {% endif %}
+    {% if page_image %}
+      <meta property="og:image" content="{{ page_image }}">
+      <meta name="twitter:image" content="{{ page_image }}">
+      <meta property="og:image:height" content="1200" />
+      <meta property="og:image:width" content="630" />
+      <meta name="twitter:card" content="summary_large_image">
+    {% endif %}
+    {% if not page_image and not hide_opengraph_image %}
+      <meta property="og:image" content="{% static 'img/pinjour-og-image-1200x630.png' %}">
+      <meta name="twitter:image" content="{% static 'img/pinjour-og-image-1200x630.png' %}">
+      <meta property="og:image:height" content="1200" />
+      <meta property="og:image:width" content="630" />
+      <meta name="twitter:card" content="summary_large_image">
+    {% endif %}
+    {% if page_url %}
+      <meta property="og:url" content="{{ page_url }}">
+      <meta name="twitter:url" content="{{ page_url }}">
+      <link rel="canonical" href="{{ page_url }}" />
+    {% endif %}
+    <script async src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <div id="react"></div>
+    <script>
+      window.props = {{ props|safe }};
+      window.react_mount = document.getElementById('react');
+    </script>
+    {% render_bundle 'app' %}
+  </body>
+</html>

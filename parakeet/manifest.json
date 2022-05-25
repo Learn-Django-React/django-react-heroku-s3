@@ -1,0 +1,17 @@
+{
+  "android_package_name":"com.learndjangoreact",
+  "background_color":"#fff",
+  "display":"standalone",
+  "icons":[
+    {
+      "src":"",
+      "sizes":"192x192",
+      "type":"image/png"
+    }
+  ],
+  "name":"Learn Django & React",
+  "orientation":"portrait",
+  "short_name":"Learn Django & React",
+  "start_url":"/?utm_source=homescreen_icon",
+  "theme_color":"#FFFFFF"
+}
