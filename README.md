@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 
 ```
-python parakeet/manage.py runserver 0.0.0.0:8000
+cd parakeet && python manage.py runserver 0.0.0.0:8000
 ```
 
 Run React app:
