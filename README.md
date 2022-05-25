@@ -1,5 +1,6 @@
 # django-react-heroku-s3
-Django server and React web app hosted on Heroku and s3.
+
+Boilerplate Django server and React web app configured for Heroku and S3.
 
 
 Run Django server locally:
