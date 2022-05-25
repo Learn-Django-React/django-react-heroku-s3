@@ -2,7 +2,7 @@ django-react-heroku-s3 is a boilerplate Django server and React web app configur
 
 ### Installation
 
-Install requirements:
+Install python dependencies:
 
 ```
 source env bin/activate
