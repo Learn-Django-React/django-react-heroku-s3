@@ -1,4 +1,4 @@
-This project is a foundational Django server and React web app configured for Heroku and S3. Join [learndjangoreact.com](https://learndjangoreact.com) and follow [@jfornear](https://twitter.com/jfornear) for updates.
+This project is a starter Django server and React web app configured for Heroku and S3. Join [learndjangoreact.com](https://learndjangoreact.com) and follow [@jfornear](https://twitter.com/jfornear) for updates.
 
 ### Installation
 
