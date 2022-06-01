@@ -65,8 +65,22 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(svg|jpe?g|gif|png)$/,
-        use: ['file-loader?name=static/img/[name].[ext]?[fullhash]']
+        test: /\.svg/,
+        type: 'asset/inline'
+      },
+      {
+        test: /\.(jpe?g|gif|png)$/,
+        type: 'asset/resource',
+        generator: {
+         filename: 'static/img/[name][ext]?[fullhash]'
+       }
+     },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource',
+        generator: {
+         filename: 'static/fonts/[name][ext]'
+       }
       }
     ]
   },
