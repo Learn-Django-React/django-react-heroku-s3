@@ -1,4 +1,4 @@
-A starter Django server and React web app configured for Heroku and AWS S3/Cloudfront. Visit [learndjangoreact.com](https://learndjangoreact.com) for more and follow [@jfornear](https://twitter.com/jfornear) for updates.
+A starter Django server and React web app configured for Heroku and AWS S3/Cloudfront. Follow [learndjangoreact.com](https://learndjangoreact.com) and [@jfornear](https://twitter.com/jfornear) for updates.
 
 ### Installation
 
