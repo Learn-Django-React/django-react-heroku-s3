@@ -54,8 +54,7 @@ else:
     AWS_ACCESS_KEY_ID = config['AWS_ACCESS_KEY_ID']
     AWS_SECRET_ACCESS_KEY = config['AWS_SECRET_ACCESS_KEY']
 
-
-
+DJSTRIPE_FOREIGN_KEY_TO_FIELD = "id"
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
@@ -80,6 +79,7 @@ INSTALLED_APPS = [
     'web',
     'storages',
     'webpack_loader',
+    'corsheaders',
 ]
 
 CSRF_TRUSTED_ORIGINS = ['https://*learndjangoreact.com']
@@ -91,6 +91,9 @@ APPEND_SLASH = False
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'parakeet.middleware.RemoveWWWMiddleware',
+    'django.middleware.gzip.GZipMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -132,7 +135,16 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
+# Cache
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'parakeet_cache_table',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
