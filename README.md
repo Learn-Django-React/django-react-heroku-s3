@@ -5,13 +5,7 @@ Django and React starter app configured for Heroku and S3 by [learndjangoreact.c
 Install python dependencies:
 
 ```
-python3 -m venv env
-```
-```
-source env bin/activate
-```
-```
-pip install -r requirements.txt
+python3 -m venv env && source env bin/activate && pip install -r requirements.txt
 ```
 
 Create a .env file:
