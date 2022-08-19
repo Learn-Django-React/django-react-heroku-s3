@@ -1,4 +1,4 @@
-django-react-heroku-s3 is a boilerplate Django server and React web app configured for Heroku and S3.
+A starter Django and React app configured for Heroku and S3. Join [learndjangoreact.com](https://learndjangoreact.com) and follow [@jfornear](https://twitter.com/jfornear) for updates.
 
 ### Installation
 
