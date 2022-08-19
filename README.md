@@ -8,7 +8,7 @@ Install python dependencies:
 python3 -m venv env && source env bin/activate && pip install -r requirements.txt
 ```
 
-Create a .env file:
+Create a `.env` file:
 
 ```
 SECRET_KEY = '<django_secret_key>'
