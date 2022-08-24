@@ -1,8 +1,4 @@
-### Django and React starter app
-
-This is a Django and React starter app configured for Heroku and S3.
-
-See tutorials and docs on [learndjangoreact.com](https://learndjangoreact.com).
+Django and React starter app configured for Heroku and S3 by [learndjangoreact.com](https://learndjangoreact.com).
 
 Follow [@jfornear](https://twitter.com/jfornear) for updates.
 
