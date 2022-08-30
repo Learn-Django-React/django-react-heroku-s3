@@ -30,7 +30,7 @@ python manage.py runserver 0.0.0.0:8000
 Install npm depencies:
 
 ```
-npm install
+npm install --legacy-peer-deps
 ```
 
 Run React app locally:
