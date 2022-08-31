@@ -1,4 +1,4 @@
-Django and React starter app configured for Heroku and S3 by [learndjangoreact.com](https://learndjangoreact.com) and [@jfornear](https://twitter.com/jfornear).
+Django and React starter app configured for Heroku and S3. Tutorials and docs on [learndjangoreact.com](https://learndjangoreact.com). Follow [@jfornear](https://twitter.com/jfornear) for updates.
 
 ### Installation
 
@@ -6,15 +6,11 @@ Install python dependencies:
 
 ```
 python3 -m venv env
-```
-```
-source env bin/activate
-```
-```
+source env/bin/activate
 pip install -r requirements.txt
 ```
 
-Create a .env file:
+Create a `.env` file:
 
 ```
 SECRET_KEY = '<django_secret_key>'
@@ -27,13 +23,14 @@ SENDGRID_API_KEY = '<sendgrid_api_key>'
 Run Django server locally:
 
 ```
-cd parakeet && python manage.py runserver 0.0.0.0:8000
+cd parakeet
+python manage.py runserver 0.0.0.0:8000
 ```
 
 Install npm depencies:
 
 ```
-npm install
+npm install --legacy-peer-deps
 ```
 
 Run React app locally:
