@@ -5,8 +5,8 @@ const BundleTracker = require('webpack-bundle-tracker');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
-config.output.path = path.resolve('./parakeet/web/static/dist/');
-config.output.publicPath = "https://d1y53h0rs2bp6k.cloudfront.net/static/dist/"
+config.output.path = path.resolve('./parakeet/web/static/prod/');
+config.output.publicPath = "https://d1y53h0rs2bp6k.cloudfront.net/static/prod/"
 
 config.plugins = [
   new webpack.DefinePlugin({

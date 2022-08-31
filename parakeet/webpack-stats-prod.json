@@ -3,13 +3,13 @@
   "assets": {
     "app-0eddbded91c77d560b66.js": {
       "name": "app-0eddbded91c77d560b66.js",
-      "path": "/Users/jesse/code/django-react-heroku-s3/parakeet/web/static/dist/app-0eddbded91c77d560b66.js",
-      "publicPath": "https://d1y53h0rs2bp6k.cloudfront.net/static/dist/app-0eddbded91c77d560b66.js"
+      "path": "/Users/jesse/code/django-react-heroku-s3/parakeet/web/static/prod/app-0eddbded91c77d560b66.js",
+      "publicPath": "https://d1y53h0rs2bp6k.cloudfront.net/static/prod/app-0eddbded91c77d560b66.js"
     },
     "app-0eddbded91c77d560b66.js.LICENSE.txt": {
       "name": "app-0eddbded91c77d560b66.js.LICENSE.txt",
-      "path": "/Users/jesse/code/django-react-heroku-s3/parakeet/web/static/dist/app-0eddbded91c77d560b66.js.LICENSE.txt",
-      "publicPath": "https://d1y53h0rs2bp6k.cloudfront.net/static/dist/app-0eddbded91c77d560b66.js.LICENSE.txt"
+      "path": "/Users/jesse/code/django-react-heroku-s3/parakeet/web/static/prod/app-0eddbded91c77d560b66.js.LICENSE.txt",
+      "publicPath": "https://d1y53h0rs2bp6k.cloudfront.net/static/prod/app-0eddbded91c77d560b66.js.LICENSE.txt"
     }
   },
   "chunks": {
@@ -17,5 +17,5 @@
       "app-0eddbded91c77d560b66.js"
     ]
   },
-  "publicPath": "https://d1y53h0rs2bp6k.cloudfront.net/static/dist/"
+  "publicPath": "https://d1y53h0rs2bp6k.cloudfront.net/static/prod/"
 }

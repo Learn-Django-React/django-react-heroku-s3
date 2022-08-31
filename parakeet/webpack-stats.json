@@ -1,16 +1,6 @@
 {
   "status": "done",
   "assets": {
-    "app-3da7922b4fa3cea6c097.js": {
-      "name": "app-3da7922b4fa3cea6c097.js",
-      "path": "/Users/jesse/code/django-react-heroku-s3/parakeet/web/static/bundles/app-3da7922b4fa3cea6c097.js",
-      "publicPath": "/static/bundles/app-3da7922b4fa3cea6c097.js"
-    },
-    "app-40b8881bb750027a2062.js": {
-      "name": "app-40b8881bb750027a2062.js",
-      "path": "/Users/jesse/code/django-react-heroku-s3/parakeet/web/static/bundles/app-40b8881bb750027a2062.js",
-      "publicPath": "/static/bundles/app-40b8881bb750027a2062.js"
-    },
     "app-668872a2281eb0c52bc2.js": {
       "name": "app-668872a2281eb0c52bc2.js",
       "path": "/Users/jesse/code/django-react-heroku-s3/parakeet/web/static/bundles/app-668872a2281eb0c52bc2.js",
