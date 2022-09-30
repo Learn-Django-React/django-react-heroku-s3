@@ -1,4 +1,4 @@
-Django and React starter app configured for Heroku and S3. Read the tutorial on [learndjangoreact.com](https://learndjangoreact.com).
+Django and React starter app configured for Heroku and S3. Read the tutorial on [learndjangoreact.com](https://learndjangoreact.com)!
 
 ### Installation
 
