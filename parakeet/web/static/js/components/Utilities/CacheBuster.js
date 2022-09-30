@@ -59,7 +59,11 @@ class CacheBuster extends React.Component {
   }
   render() {
     const { loading, isLatestVersion, refreshCacheAndReload } = this.state;
-    return this.props.children({ loading, isLatestVersion, refreshCacheAndReload });
+    if (loading) return null;
+    if (!loading && !isLatestVersion) {
+      refreshCacheAndReload();
+    }
+    return this.props.children;
   }
 }
 
