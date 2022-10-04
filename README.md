@@ -1,6 +1,6 @@
 Django and React starter app configured for Heroku and S3.
 
-Build something new with [learndjangoreact.com](https://learndjangoreact.com).
+Build something new with [learndjangoreact.com](https://learndjangoreact.com)!
 
 ### Installation
 
