@@ -32,6 +32,7 @@ Install npm depencies:
 ```
 npm install
 ```
+
 If you get a `Could not resolve dependency` error, review the dependencies in `package.json` and try again with `--legacy-peer-deps`:
 
 ```
